@@ -73,16 +73,16 @@ A running checklist for building the Soundroom MVP. Check items off as you compl
 
 ## Step 2: Set up SQLite and the data model
 
-- [ ] In `server`, install: `npm install better-sqlite3`
-- [ ] Create `server/schema.sql` matching the design doc's Section 7:
+- [x] In `server`, install: `npm install better-sqlite3`
+- [x] Create `server/schema.sql` matching the design doc's Section 7:
   - `users` (id, username, email, password_hash, bio, favorite_genres, created_at)
   - `rooms` (id, name, mood_tag, created_by, created_at)
   - `room_members` (room_id, user_id, joined_at)
   - `queue_items` (id, room_id, track_id, track_name, added_by, note, added_at)
   - `chat_messages` (id, room_id, user_id, content, created_at)
-- [ ] Write a small init script (e.g. `server/db.js`) that creates the DB file and runs the schema on first run
-- [ ] Seed 1–2 fake users/rooms for testing
-- [ ] Verify tables exist by querying them (e.g. with a quick script or a SQLite browser tool)
+- [x] Write a small init script (e.g. `server/db.js`) that creates the DB file and runs the schema on first run
+- [x] Seed 1–2 fake users/rooms for testing
+- [x] Verify tables exist by querying them (e.g. with a quick script or a SQLite browser tool)
 
 ---
 
